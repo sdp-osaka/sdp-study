@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>開発と平和のためのスポーツ研究会</title>
+<link href="common/css/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="smartRollover.js"></script>
+<!--スライド設定-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 3000 );
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+  <div id="toprogo"><a href="index.html"><img src="common/images/top_rogo.gif" width="346" height="82" alt="トップロゴ" /></a></div>
+  <div id="header_h1"><h1>世界の人々の、開発と平和のためのスポーツ</h1></div>
+  <div id="navi"><ul><li><a href="index.html"><img src="common/images/navi_home_off.gif" width="134" height="48" alt="ホーム" /></a></li>
+                      <li><a href="peace.html"><img src="common/images/navi_rinen_off.gif" width="130" height="48" alt="理念" /></a></li>
+                      <li><a href="kemkyukai.html"><img src="common/images/navi_sports_off.gif" width="130" height="48" alt="スポーツと人" /></a></li>
+                      <li><a href="category.html"><img src="common/images/navi_bunyabetsu_off.gif" width="130" height="48" alt="分野別" /></a></li>
+                      <li><a href="contact.html"><img src="common/images/navi_toiawase_off.gif" width="130" height="48" alt="問い合わせ" /></a></li>
+  </ul></div>
+</div>
+<div id="peace_image"><img src="common/images/rinen_image.jpg" width="1000" height="214" alt="平和構築" /></div>
+<div id="peace_contents"><p>　本研究会は、大阪大学大学院 人間科学研究科 生涯教育学研究室有志を母体とし、「開発と平和のためのスポーツ」に関心を持つ研究者、実務者、学生が情報を共有することを目的に設立しました。研究会の活動では、世界の様々な国で活動する実務者や研究者をゲストスピーカーとして招いたり、特に「開発と平和のためのスポーツ」の活動の成果に焦点を当てた学術的な議論を行います。
+このホームページでは、研究会の活動内容を報告し、関係するテーマの参考文献を紹介します。
+<br /><br />
+　自分が携わってきた国際協力や開発・復興支援を「目に見える形にしたい」と考える人、行ったことがない国の状況やそこでの活動に興味がある人、スポーツを通して日本や海外の社会に貢献してみたい人、みなさまどうぞ私たちの研究会に奮ってご参加ください。
+
+</p></div>
+<div id="peace_photo"><img src="common/images/rinen_photo.jpg" width="1000" height="234" alt="平和構築写真" /></div>
+<div id="chart_title"><p>スポーツを通じた開発と周辺領域</p></div>
+<div id="chart"><img src="common/images/rinen_zu.jpg" width="1000" height="532" alt="チャート" /></div>
+<div id="footer"><h3>Copyright © 2017 Sport for Development and Peace. All Rights Reserved.</h3></div>
+</body>
+</html>

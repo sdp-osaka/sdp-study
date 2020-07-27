@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>開発と平和のためのスポーツ研究会</title>
+<link href="common/css/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="smartRollover.js"></script>
+<!--スライド設定-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 3000 );
+});
+</script>
+
+<style type="text/css">
+a:link {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+	color: #69C;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+  <div id="toprogo"><a href="index.html"><img src="common/images/top_rogo.gif" width="346" height="82" alt="トップロゴ" /></a></div>
+  <div id="header_h1"><h1>世界の人々の、開発と平和のためのスポーツ</h1></div>
+  <div id="navi"><ul><li><a href="index.html"><img src="common/images/navi_home_off.gif" width="134" height="48" alt="ホーム" /></a></li>
+                      <li><a href="peace.html"><img src="common/images/navi_rinen_off.gif" width="130" height="48" alt="理念" /></a></li>
+                      <li><a href="kemkyukai.html"><img src="common/images/navi_sports_off.gif" width="130" height="48" alt="スポーツと人" /></a></li>
+                      <li><a href="category.html"><img src="common/images/navi_bunyabetsu_off.gif" width="130" height="48" alt="分野別" /></a></li>
+                      <li><a href="contact.html"><img src="common/images/navi_toiawase_off.gif" width="130" height="48" alt="問い合わせ" /></a></li>
+  </ul></div>
+</div>
+<div id="contact_image"><img src="common/images/toi_image.jpg" width="1000" height="215" alt="お問い合わせ" /></div>
+        
+<div id="Secretariat_title"><img src="common/images/gigyou_bar.gif" width="1000" height="51" alt="事務局" /></div>
+
+<div id="staff">
+  <div id="staff_name"><img src="common/images/toi_okada.gif" width="160" height="178" alt="岡田千あき" /></div>
+  <div id="profile"><p><strong>大阪大学 人間科学研究科 准教授</strong><br />
+  早稲田大学卒業後、ジンバブエにて体育教員として活動（青年海外協力隊）、帰国後に広島大学で修士、<br />
+神戸大学で博士課程を修了（博士：学術）。スポーツを通じた開発と平和、生涯スポーツ等を研究テーマとし、<br />
+ボスニア・ヘルツェゴビナ、カンボジア、東ティモール、南スーダン等での調査・実務経験を持つ。</p></div>
+</div>
+
+<div id="staff">
+  <div id="staff_name"><img src="common/images/toi_nakai.gif" width="160" height="178" alt="中井次郎" /></div>
+  <div id="profile">
+    <p><strong>大阪大学大学院 人間科学研究科 博士後期課程2年</strong><br />
+  関西大学卒業後、株式会社ジェイ・ティー・ビー（現　株式会社JTB西日本）に入社。
+  旅行業務取扱管理者、JPNプロモーショナル・マーケターなどの資格を有し、旅行業、地域振興事業、プロモーション事業など幅広い実務経験を持つ。
+大阪府立大学 経済学研究科修士課程を修了（学位：M.Sc.：Master of Science in Tourism Management）。
+現在は、大阪大学大学院にて、高等教育機関での現場をベースにスポーツの役割や若者のライフスキル形成に関する研究を進める。
+</p></div>
+</div>
+
+
+<div id="staff">
+  <div id="staff_name"><img src="common/images/toi_okuno.gif" width="160" height="178" alt="奥野輔" /></div>
+  <div id="profile"><p><strong>大阪大学大学院 人間科学研究科 博士前期課程2年</strong><br />
+  大阪大学 基礎工学部卒業後、同研究科修士課程修了。現在は、大阪大学大学院人間科学研究科にて、<br />
+ボスニアでのスポーツを通じた民族融和に関する研究を進める。学位は基礎工学（修士）</p></div>
+</div>
+
+<div id="staff">
+  <div id="staff_name"><img src="common/images/toi_kashu.gif" width="160" height="178" alt="加朱将也" /></div>
+  <div id="profile"><p><strong>大阪大学大学院 人間科学研究科 博士前期課程2年</strong><br />
+  順天堂大学卒業後、エチオピアにて青年海外協力隊員（職種：体育）として活動。<br />
+帰国後は、公立の小学校、高校教員を経て、ヨルダン、シリア難民キャンプの<br />Save the children international の施設で
+活動（短期隊員として）。<br />
+現在は、大阪大学大学院にて、難民キャンプにおけるスポーツの役割に関する研究を進める。</p></div>
+</div>
+
+
+<div id="staff">
+  <div id="staff_name"><img src="common/images/toi_hattori.gif" width="160" height="178" alt="服部貴紀" /></div>
+  <div id="profile"><p><strong>大阪大学大学院 人間科学研究科 博士前期課程1年</strong><br />
+  豊橋技術科学大学　機械システム工学課程卒業後、日本スポーツ振興センター東京支所勤務。
+  その後、青年海外協力隊タンザニア理数科教師をしながら、タンザニア19歳以下ラグビー代表チームコーチとなる。
+  2014年、二度目の青年海外協力隊に参加、キルギス共和国ラグビー隊員として活動を行う。
+  帰国後、JICAキルギス共和国事務所企画調査員を経て、現在、大阪大学大学院にてスポーツを通じた国際協力の評価指標に関する研究を行っている。</p></div>
+</div>
+
+
+<div id="staff02">
+  <div id="staff_name"><img src="common/images/toi_hase.gif" width="160" height="178" alt="長谷一宏" /></div>
+  <div id="profile"><p><strong>大阪大学大学院 人間科学研究科 博士前期課程1年</strong><br />
+  立教大学卒業後物流業界の民間企業に勤務。 
+      <br />
+      退職後青年海外協力隊に参加し、ウガンダにて野球指導員として活動。 
+      <br />
+      現在の関心は「開発途上国」におけるスポーツ支援の対象者への質的調査 とIT機器を活用した同支援について。 </p></div>
+</div>
+<div id="con_space"><p><br />
+開発と平和のためのスポーツ研究会 事務局<br />
+大阪大学 大学院 人間科学研究科 内<br />
+住所：〒565-0871　大阪府吹田市山田丘1番2号　</p></div>
+<div id="mail">
+  <div id="mail_icon"><img src="common/images/email.gif" width="392" height="98" alt="メールアドレス" /></div>
+          <div id="mailaddress"><p><a href="mailto:sdp@hus.osaka-u.ac.jp">sdp@hus.osaka-u.ac.jp</a></p></div>
+        </div>
+
+<div id="tel">
+  <div id="telno"><img src="common/images/access.gif" width="392" height="98" alt="アクセス" /></div>
+  <div id="telnumber"><p><a href="http://www.hus.osaka-u.ac.jp/ja/access.html">http://www.hus.osaka-u.ac.jp/ja/access.html</a></p>
+  </div>
+</div>
+
+
+<div id="footer"><h3>Copyright © 2017 Sport for Development and Peace. All Rights Reserved.</h3></div>
+</body>
+</html>

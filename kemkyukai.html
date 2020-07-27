@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>開発と平和のためのスポーツ研究会</title>
+<link href="common/css/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="smartRollover.js"></script>
+<!--スライド設定-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 3000 );
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+  <div id="toprogo"><a href="index.html"><img src="common/images/top_rogo.gif" width="346" height="82" alt="トップロゴ" /></a></div>
+  <div id="header_h1"><h1>世界の人々の、開発と平和のためのスポーツ</h1></div>
+  <div id="navi"><ul><li><a href="index.html"><img src="common/images/navi_home_off.gif" width="134" height="48" alt="ホーム" /></a></li>
+                      <li><a href="peace.html"><img src="common/images/navi_rinen_off.gif" width="130" height="48" alt="理念" /></a></li>
+                      <li><a href="kemkyukai.html"><img src="common/images/navi_sports_off.gif" width="130" height="48" alt="スポーツと人" /></a></li>
+                      <li><a href="category.html"><img src="common/images/navi_bunyabetsu_off.gif" width="130" height="48" alt="分野別" /></a></li>
+                      <li><a href="contact.html"><img src="common/images/navi_toiawase_off.gif" width="130" height="48" alt="問い合わせ" /></a></li>
+  </ul></div>
+</div>
+<div id="sports_image"><img src="common/images/kenkyu_image.jpg" width="1000" height="214" alt="研究会" /></div>
+<div id="kenkyu_space">
+  <p>＊ボタンをクリックで、各資料がご覧になれます。</p></div>
+
+<div id="year"><p>●2010年</p></div>
+<!--研究会1回分-->
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken01.pdf"><p>第1回</p></a></div>
+  <div id="kenkyu_text"><h3>（2010年12月22日）話題提供、研究・実践発表</h3></div>
+</div>
+
+<!--研究会1回分-->
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken02.jpg"><p>第2回</p></a></div>
+  <div id="kenkyu_text">
+    <h4>（2010年12月22日）（2011年3月15日）なぜ、貧しさの中でスポーツをするのか　<br />
+　※東日本大震災により中止</h4></div>
+</div>
+
+<div id="year2"><p>●2012年</p></div>
+
+<!--研究会1回分-->
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken03.pdf"><p>第3回</p></a></div>
+  <div id="kenkyu_text"><h3>（2012年1月29日）野球普及活動とHIV/エイズ教育 in ジンバブエ</h3></div>
+</div>
+
+<div id="year2"><p>●2016年</p></div>
+
+
+<!--研究会1回分-->
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken4_6.pdf"><p>第4回</p></a></div>
+  <div id="kenkyu_text"><h3>（2016年5月12日）南スーダンにおけるスポーツを通じた平和構築</h3></div>
+</div>
+
+<!--研究会1回分-->
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken4_6.pdf"><p>第5回</p></a></div>
+  <div id="kenkyu_text"><h3>（2016年6月9日）ボスニア・ヘルツェゴビナにおけるスポーツを通じた平和構築</h3></div>
+</div>
+
+<!--研究会1回分-->
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken4_6.pdf"><p>第6回</p></a></div>
+  <div id="kenkyu_text"><h3>（2016年7月28日）ザンビアにおけるスポーツを通じた平和構築</h3></div>
+</div>
+
+<!--研究会1回分-->
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken07.pdf"><p>第7回</p></a></div>
+  <div id="kenkyu_text"><h3>（2016年12月9日）難民キャンプにおけるスポーツを通じた平和構築</h3></div>
+</div>
+
+<div id="year2"><p>●2017年</p></div>
+
+<div id="kennkyuukai">
+  <div id="box"><a href="common/images/pdf/ken08.pdf"><p>第8回</p></a></div>
+  <div id="kenkyu_text"><h3>（2017年5月30日） 種目を超えて 〜元ラグビー⽇本代表が取り組む国際協力・交流〜 </h3></div>
+</div>
+
+
+<div id="kennkyuukai">
+ <!--スペース-->
+</div>
+
+<div id="footer"><h3>Copyright © 2017 Sport for Development and Peace. All Rights Reserved.</h3></div>
+</body>
+</html>

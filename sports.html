@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>開発と平和のためのスポーツ研究会</title>
+<link href="common/css/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="smartRollover.js"></script>
+<!--スライド設定-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 3000 );
+});
+</script>
+</head>
+
+<body>
+<div id="header">
+  <div id="toprogo"><a href="index.html"><img src="common/images/top_rogo.gif" width="346" height="82" alt="トップロゴ" /></a></div>
+  <div id="header_h1"><h1>世界の人々の、開発と平和のためのスポーツ</h1></div>
+  <div id="navi"><ul><li><a href="index.html"><img src="common/images/navi_home_off.gif" width="134" height="48" alt="ホーム" /></a></li>
+                      <li><a href="peace.html"><img src="common/images/navi_rinen_off.gif" width="130" height="48" alt="理念" /></a></li>
+                      <li><a href="kemkyukai.html"><img src="common/images/navi_sports_off.gif" width="130" height="48" alt="スポーツと人" /></a></li>
+                      <li><a href="category.html"><img src="common/images/navi_bunyabetsu_off.gif" width="130" height="48" alt="分野別" /></a></li>
+                      <li><a href="contact.html"><img src="common/images/navi_toiawase_off.gif" width="130" height="48" alt="問い合わせ" /></a></li>
+  </ul></div>
+</div>
+<div id="sports_image"><img src="common/images/sports_image.jpg" width="1000" height="214" alt="スポーツと｢人｣" /></div>
+<div id="sports_title"><h2>題：東日本大震災とサッカー</h2>
+  <div id="sports_subtitle"><p>～一人の人にできること～</p></div>
+</div>
+<div id="sports_contents01"><p>　2011年の東日本大震災は、我が国に未曾有の被害をもたらし、国際社会から多くの支援や応援のメッセージが寄せられた。
+　サッカー界でも様々な動きがあった。被災地出身のJリーガーや、海外でプレイする選手が様々なアクションを起こした。その中で、宮城県出身で、読売サッカークラブの黄金期を担った加藤久さんの活動を目にした。
+私は、大学の卒業論文で、一流選手のセカンドキャリアをテーマにし、当時、現役選手でありながら、教鞭をとられていた加藤先生に副指導教官をしていただいた。
+加藤先生は、その後、ヴェルディ川崎の監督や日本サッカー協会の要職を歴任され、2011年10月にはJFAの復興支援特任コーチに就任されていた。後に雑誌Numberの中でその活動を以下のように話されている。</p></div>
+
+<div id="sports_contents02"><p>「人には役割があるんです。香川（真司）が白石に、長谷部 （誠）が大槍に、古田（麻也）と内田（篤人）が大船渡に行ったり、有名な選手が来て、エネルギー を与えてくれるのは大事なこと。
+僕は、日常を支えるために人の横に立って支援する。もちろん、生活の全てを支えることはできません。
+僕は、サッカーしかできないし、サッカーで復興のお手伝いをさせていただく。その役割を果たすには、まず加藤久がどんな人間なのか、分かってもらう必要がある。
+そうすれば、地元の人とのコミュニケーションはより濃密になるし、今まで言ってくれなかったことも言ってくれるようになる。そうして初めて、急所に支援が届くと思うんです」</p></div>
+
+<div id="sports_contents03"><p>　私は、この言葉には、スポーツやサッカーと復興支援を考える上での真理があると思う。
+加藤久さんと言えば、往年の名選手である。一流のサッカー人が実際に活動を行った上で 語る言葉は強い説得力を持つ。
+災害、戦争などの緊急援助や復興支援の現場で、人々に寄り添うためにあるサッカー。東北の被災地で、また世界中の支援が必要な地域で、もっと多くのこのようなサッカーの形を見てみたい。</p></div>
+
+<div id="footer"><h3>Copyright © 2017 Sport for Development and Peace. All Rights Reserved.</h3></div>
+</body>
+</html>

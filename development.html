@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>開発と平和のためのスポーツ研究会</title>
+<link href="common/css/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="smartRollover.js"></script>
+<!--スライド設定-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 3000 );
+});
+</script>
+
+<style type="text/css">
+a:link {
+	color: #F63;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #69C;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+  <div id="toprogo"><a href="index.html"><img src="common/images/top_rogo.gif" width="346" height="82" alt="トップロゴ" /></a></div>
+  <div id="header_h1"><h1>世界の人々の、開発と平和のためのスポーツ</h1></div>
+  <div id="navi"><ul><li><a href="index.html"><img src="common/images/navi_home_off.gif" width="134" height="48" alt="ホーム" /></a></li>
+                      <li><a href="peace.html"><img src="common/images/navi_rinen_off.gif" width="130" height="48" alt="理念" /></a></li>
+                      <li><a href="kemkyukai.html"><img src="common/images/navi_sports_off.gif" width="130" height="48" alt="スポーツと人" /></a></li>
+                      <li><a href="category.html"><img src="common/images/navi_bunyabetsu_off.gif" width="130" height="48" alt="分野別" /></a></li>
+                      <li><a href="contact.html"><img src="common/images/navi_toiawase_off.gif" width="130" height="48" alt="問い合わせ" /></a></li>
+  </ul></div>
+</div>
+<div id="development_imege"><img src="common/images/kaihatsu_image.jpg" width="1000" height="417" alt="開発" /></div>
+<div id="development_title"><p>以下にスポーツを通じた開発に関わる文献を示す。</p>
+<h4>＊ここには、研究会の中で参考にしている文献をリスト化しています。各著者に許可を取って編集したものではないため、取扱いには注意をお願いします。</h4></div>
+
+<div id="development_index">
+  <div id="left_title"><a href="development.html#kyoiku_kaihatsu"><img src="common/images/kaihatsu_kyoiku.gif" width="110" height="122" alt="教育" /></a></div>
+  <div id="left_text02"><p>ライフスキル、問題解決能力、社会性等の育成に関わる学校内外の事例を紹介する。</p></div>
+  <div id="right_title"><a href="development.html#kenkohoken"><img src="common/images/kaihatsu_kenko.gif" width="120" height="122" alt="健康保健" /></a></div>
+  <div id="right_text02"><p>以下の文献では公衆衛生、健康保持増進等、主に健康や保健に関わる事例が紹介されている。</p></div>
+</div>
+
+<div id="development_index">
+  <div id="left_title"><a href="development.html#gender01"><img src="common/images/kaihatsu_gender.gif" width="110" height="122" alt="ジェンダー" /></a></div>
+  <div id="left_text02"><p>ジェンダー差の是正や、エンパワメント、ジェンダーに関わる文献を掲載する。</p></div>
+  <div id="right_title"><a href="development.html#shakaikaihatsu"><img src="common/images/kaihatsu_shakai.gif" width="120" height="122" alt="社会開発" /></a></div>
+  <div id="right_text02"><p>コミュニティーエンパワメントや信頼醸成等、社会開発に関わる研究を示す。</p></div>
+</div>
+
+<div id="development_index">
+  <div id="left_title"><a href="development.html#HIV02"><img src="common/images/kaihatsu_HIV.gif" width="110" height="122" alt="HIV" /></a></div>
+  <div id="left_text02"><p>エイズの予防や啓発活動のための教育の文献を掲載する。</p></div>
+  <div id="right_title"><a href="development.html#global02"><img src="common/images/kaihatsu_glo.gif" width="120" height="122" alt="グローバリゼーション" /></a></div>
+  <div id="right_text02"><p>スポーツと開発に関わる一般的な概論を中心に記載する。</p></div>
+</div>
+
+<div id="kyoiku"><a name="kyoiku_kaihatsu" id="kyoiku_kaihatsu"></a><img src="common/images/kaihatsu_kyo_bar.gif" width="1000" height="118" alt="教育" /></div>
+
+<!--教育文献-->
+<div id="bookrist05">
+  <div id="rist_right05">
+  <h3>1、 Evaluation of sport for ALL</h3>
+  <p>　　著書:Dr.Cathi Draper.<br />
+    　　Laureus Sport for Good Foundation<br />
+    　　<a href="https://www.sportanddev.org/en/article/publication/evaluation-sport-all-assessment-life-skills-youth">https://www.sportanddev.org/en/article/publication/evaluation-sport-all-assessment-life-skills-youth</a>[岡田ゼミ1]</p>
+<h3><br />
+  2、 The impact of a sport-for-education program in the south african context of poverty</h3>
+  <p>　　著書:Cora Burnett.<br />
+    　　Sport in society<br />
+    　　<a href="http://www.tandfonline.com/doi/abs/10.1080/17430437.2014.882903">http://www.tandfonline.com/doi/abs/10.1080/17430437.2014.882903</a></p>
+  <br />
+<h3>3、 The role of Physical Education Teacher Preparation and its Potential for social Change in El Salvador</h3>
+  <p>　　著書:James L Mandigo, John Corlett, Erin Hobin, Joanna Sheppard.<br />
+    　　PHENex</p>
+  <p>　　<a href="http://ojs.acadiau.ca/index.php/phenex/article/view/50">http://ojs.acadiau.ca/index.php/phenex/article/view/50</a></p>
+  <br />
+<h3>4、 Education for social change? A Freirean critique of sport for development and peace</h3>
+  <p>　　著書:Ramón Spaaij.<br />
+    　　Journal Physical Education and Sport Pedagogy<br />
+    　　<a href="http://www.tandfonline.com/doi/abs/10.1080/17408989.2012.690378">http://www.tandfonline.com/doi/abs/10.1080/17408989.2012.690378</a><br />
+    <br />
+  </p>
+<h3>5、 Contribution of Physical Education and Sport to Health-Related Fitness in High School Students</h3>
+  <p>　　著書:Michael W. Beets MEd, MPH,Kenneth H. Pitetti PhD, FACSM.<br />
+    　　Journal of school health<br />
+    　　<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1746-1561.2005.tb00005.x/abstract">http://onlinelibrary.wiley.com/doi/10.1111/j.1746-1561.2005.tb00005.x/abstract</a><br />
+    <br />
+  </p>
+<h3>6、 大学教育プログラムを通じた開発途上国におけるスポーツ教育活動</h3>
+  <p>　　著書:木村 寿一他<br />
+    　　国際武道大学研究紀要　<a href="http://ci.nii.ac.jp/naid/110008427704">http://ci.nii.ac.jp/naid/110008427704</a><br />
+    <br />
+  </p>
+<h3>7、 開発と平和のためのラグビーの現状と可能性―pass it back を事例として</h3>
+  <p>　　著書:向山昌利<br />
+    　　びわこ学院大学研究紀要</p>
+    <h3><br />
+    8、 新版世界の体育史</h3>
+  <p>　　著書:ワンダーレン D.B・ベネット B.L（加藤橘夫訳）<br />
+    　　ベースボールマガジン社</p>
+    <h3><br />
+    9、 中国の体育・スポーツ史</h3>
+  <p>　　著書:笹島恒輔<br />
+    　　ベースボールマガジン社</p>
+    <h3><br />
+</div>
+</div>
+
+<div id="hoken"><a name="kenkohoken" id="kenkohoken"></a><img src="common/images/kaihatsu_hoken_bar.gif" width="1000" height="118" alt="健康保健" /></div>
+<!--健康保健文献-->
+<div id="bookrist06">
+  <div id="rist_right06">
+    <h3>1、 Physical Activity and Public Health</h3>
+  <p>　　A Recommendation From the Centers for Disease Control and Prevention and the American College of Sports Medicine<br />
+    　　著者：Russell R. Pate, PhD; Michael Pratt, MD, MPH; Steven N. Blair, PED; et al.<br />
+    　　JAMA </p>
+<h3><br />
+  2、 Physical activity and public health: Updated recommendation for adults from the American College of Sports Medicine<br /> 
+     　　and the American Heart Association.</h3>
+  <p>　　著者：Haskell, W. L., Lee, I-M., Pate, R. R., Powell, K. E., Blair, S. N., Franklin, B. A., ... Bauman, A.<br />
+    　　Circulation</p>
+  <br />
+<h3>3、 Physical activity and public health in older adults: Recommendation from the American College of Sports Medicine<br /> 
+     　　and the American Heart Association.</h3>
+  <p>　　著者：Nelson, M. E., Rejeski, W. J., Blair, S. N., Duncan, P. W., Judge, J. O., King, A. C., ... Castaneda-Sceppa, C.<br />
+    　　Circulation</p>
+  <br />
+<h3>4、 ACSM’s New Preparticipation Health Screening Recommendations from ACSM’s Guidelines for<br />
+  　　Exercise Testing 
+     and Prescription, Ninth Edition</h3>
+  <p>　　著者：Thompson, Paul D.  Arena, Ross Riebe, Deborah Pescatello, Linda S.<br />
+    　　Current Sports Medicine Reports<br />
+    <br />
+  </p>
+<h3>5、 Walking to Health</h3>
+  <p>　　著者：Jeremy N. MorrisAdrianne E. Hardman.<br />
+    　　Morris, J.N. &amp; Hardman, A.E. Sports Med<br />
+    <br />
+  </p>
+<h3>6、 Relationship of physical health status and health practices</h3>
+  <p>　　著者：Nedra B. Belloc, Lester Breslow.<br />
+    　　Preventive Medicine<br />
+    <br />
+  </p>
+<h3>7、 Can lifestyle changes reverse coronary heart disease?: The Lifestyle Heart Trial</h3>
+  <p>　　著者：D. Ornish, S.E. Brown,  J.H. Billings, et al.<br />
+    　　The Lancet</p>
+  
+</div>
+</div>
+
+<div id="gender"><a name="gender01" id="gender01"></a><img src="common/images/kaihatsu_gender_bar.gif" width="1000" height="118" alt="ジェンダー" /></div>
+<!--ジェンダー文献-->
+<div id="bookrist07">
+  <div id="rist_right07">
+    <h3>1、 Sport, men, and the gender order: critical feminist perspectives.</h3>
+  <p>　　著者：Messner, M. A., Sabo, D. F.<br />
+    　　Sport, men, and the gender order: critical feminist perspectives</p>
+<h3><br />
+  2、 Perceived characteristics of sports categorized as gender-neutral, feminine and masculine</h3>
+  <p>　　著者：Koivula, Nathalie.<br />
+    　　Journal of Sport Behavior</p>
+  <br />
+<h3>3、 Ratings of gender appropriateness of sports participation: Effects of gender-based schematic processing</h3>
+  <p>　　著者：Koivula, N.<br />
+    　　Sex Roles</p>
+  <br />
+<h3>4、 Biased Voices of Sports: Racial and Gender Stereotyping in College Basketball Announcing</h3>
+  <p> 　　著者：Susan Tyler Eastman, Andrew C. Billings.<br />
+    　　Howard Journal of Communications</p>
+  <br />
+  <h3>5、 The Great American Football Ritual : Reporting Race, Class, and Gender Ineuality</h3>
+  <p>　　著者：Douglas E. Foley.<br />
+    　　<a href="http://www.umdknes.com/knes287resources/Readings/11/R01.pdf">http://www.umdknes.com/knes287resources/Readings/11/R01.pdf</a></p>
+  <br />
+  <h3>6、 Limiting Inequality through Interaction: The End(s) of Gender</h3>
+  <p>　　著者：Cecilia L. Ridgeway and Shelley J. Correll.<br />
+    　　Contemporary Sociology</p>
+  <br />
+  </div>
+</div>
+
+<div id="shakai"><a name="shakaikaihatsu" id="shakaikaihatsu"></a><img src="common/images/kaihatsu_shakai_bar.gif" width="1000" height="118" alt="社会開発" /></div>
+<!--社会開発文献-->
+<div id="bookrist08">
+  <div id="rist_right08">
+    <h3>1、 The methodological dance: critical reflections on conducting a cross-cultural comparative research project on sport for<br /> 
+     　　development and peace</h3>
+  <p>　　著者:Holly Collison.<br />
+    　　Qualitative Research in Sport, Exercise and Health<br />
+    　　<a href="http://www.tandfonline.com/doi/abs/10.1080/2159676X.2016.1206610">http://www.tandfonline.com/doi/abs/10.1080/2159676X.2016.1206610</a></p>
+<h3><br />
+  2、 Evaluating the relationship between physical education, sport and social inclusion</h3>
+  <p>　　著者:Bailey, Richard.<br />
+    　　Education Review<br />
+    　　<a href="http://www.tandfonline.com/doi/pdf/10.1080/0013191042000274196">http://www.tandfonline.com/doi/pdf/10.1080/0013191042000274196</a></p>
+  <br />
+<h3>3、 スポーツによる社会変革のための NGO/NPO の実効性（特集 スポーツによる地域開発）</h3>
+  <p>　　著者:鈴木 直文<br />
+    　　体育の科学</p>
+  <br />
+<h3>4、 A systematic review of the psychological and social benefits of participation in sport for children and adolescents:<br /> 
+     　　informing development of a conceptual model of health through sport</h3>
+  <p>　　著者:Rochelle M Eime.<br />
+    　　International Journal of Behavioral Nutrition and Physical Activity<br />
+    　　<a href="http://ijbnpa.biomedcentral.com/articles/10.1186/1479-5868-10-98">http://ijbnpa.biomedcentral.com/articles/10.1186/1479-5868-10-98</a><br />
+    <br />
+  </p>
+<h3> 5、 Youth Sports What Counts as “Positive Development?”</h3>
+  <p>　　著者:Jay Coakley.<br />
+    　　Journal of sport and social issues<br />
+    　　<a href="http://journals.sagepub.com/doi/abs/10.1177/0193723511417311">http://journals.sagepub.com/doi/abs/10.1177/0193723511417311</a><br />
+    <br />
+  </p>
+<h3>6、 Competitive sport and social capital in rural Australia</h3>
+  <p>　　著者:Matthew Tonts.<br />
+    　　Journal of rural studies<br />
+    　　<a href="http://www.sciencedirect.com/science/article/pii/S0743016705000173">http://www.sciencedirect.com/science/article/pii/S0743016705000173</a><br />
+    <br />
+  </p>
+<h3>7、 Sport-in-Development: Accountability or Development?</h3>
+  <p>　　著者:Fred Coalter.<br />
+    　　sport and international development<br />
+    　　<a href="http://link.springer.com/chapter/10.1057/9780230584402_3">http://link.springer.com/chapter/10.1057/9780230584402_3</a></p>
+    <h3><br />
+  8、 サッカーボールひとつで社会を変える : スポーツを通じた社会開発の現場から</h3>
+  <p>　　著者:岡田千あき<br />
+    　　大阪大学出版会</p>
+  <br />
+  <h3>9、 開発途上地域におけるスポーツを通じた社会開発 : カンボジアの事例検証</h3>
+  <p>　　著者:岡田千あき、ケビン ヤング<br />
+    　　運動とスポーツの科学</p>
+</div>
+</div>
+
+<div id="hiv"><a name="HIV02" id="HIV02"></a><img src="common/images/kaihatsu_HIV_bar.gif" width="1000" height="118" alt="HIV" /></div>
+<!--HIV文献-->
+<div id="bookrist09">
+  <div id="rist_right09">
+    <h3>1、 Physical activity and immunity in HIV-infected individuals</h3>
+  <p>　　著者:Bopp, C., Phillips, Fulk, L., Dudgeon, W. Sowell, R. and Hand, G. (2004).<br />
+    　　Journal of AIDS Care</p>
+<h3><br />
+  2、 “The Potentials of Sport as a Tool for a Right-Based Approach to HIV/AIDS” in Auweele</h3>
+  <p>　　著者:Bosmans, M. (2006).<br />
+    　　Sport and Development, Uitgeverij Lannoo</p>
+  <br />
+<h3>3、 An adolescent-targeted HIV prevention project using African professional soccer players as role models and <br />
+　　educators in Bulawayo</h3>
+  <p>　　著者:Clark, T. S., Friedrich, G. K., Ndlovu, M., Neilands, T. B., &amp; McFarland, W. (2006).<br />
+    　　Zimbabwe. AIDS and behavior</p>
+  <br />
+<h3>4、 HIV prevention through sport</h3>
+  <p>　　著者:Delva, W., Michielsen, K., Meulders B, Groeninck S, Wasonga E, Ajwang P, Temmerman M, &amp; Vanreusel B. (2010).<br />
+    　　The case of the Mathare Youth Sport Association in Kenya. AIDS Care<br />
+    <br />
+  </p>
+<h3>5、 Look After Yourself: An Analysis of Life Skills for Preventing HIV/AIDS in Sport for Development and<br /> 
+     　　Peace Curriculum Material</h3>
+  <p>　　著者:Forde, S. D. (2013).<br />
+    　　the master thesis of the University of British Columbia, Vancouver.<br />
+    　　<a href="https://circle.ubc.ca/bitstream/handle/2429/44656/ubc_2013_fall_forde_shawn.pdf">https://circle.ubc.ca/bitstream/handle/2429/44656/ubc_2013_fall_forde_shawn.pdf</a><br />
+    <br />
+  </p>
+<h3>6、 Young People, Sports Development and the HIV/AIDS Challenge, Loughborough</h3>
+  <p>　　著者:Kay, T., Jeanes, R., Lindsey, I., Fimusamni, J., Collins, S. &amp; Bancroft, J., (2007).<br />
+    　　Institute of Youth Sport<br />
+    <br />
+  </p>
+<h3>7、 Using football in HIV prevention in Africa</h3>
+  <p>　　著者:Khan, N., (2010).<br />
+    　　Coxswain Social Investment plus (CSI+)<br />
+    　　<a href="http://www.grassrootsoccer.org/wp-content/uploads/F4_HIV_Report.pdf">http://www.grassrootsoccer.org/wp-content/uploads/F4_HIV_Report.pdf</a></p>
+    <br />
+    <h3>8、 A narrative review of research on the effects of physical activity on people living with HIV and opportunities for<br /> 
+     　　health promotion in disadvantaged settings</h3>
+  <p>　　著者:Ley, C. &amp; Barrio, M. R. (2012).<br />
+    　　African Journal of AIDS Research<br />
+    　　<a href="http://www.tandfonline.com/doi/abs/10.2989/16085906.2012.698079">http://www.tandfonline.com/doi/abs/10.2989/16085906.2012.698079</a></p>
+  <br />
+  <h3>9、 Sport and the fight against HIV/AIDS in Zambia: A 'partnership approach'?</h3>
+  <p>　　著者:Lindsey, I., &amp; Banda, D. (2011).<br />
+    　　International Review for the Sociology of Sport</p>
+    <br />
+    <h3>10、Using sport to promote HIV/AIDS education for at-risk youths: An intervention using peer coaches in football</h3>
+  <p>　　 著者:Maro, C.N., Roberts, G.C., &amp; Sørensen, M. (2009).<br />
+    　　 Scandinavian Journal of Medicine &amp; Science in Sports</p>
+  <br />
+  <h3>11、HIV/AIDS at risk adolescent girls empowerment through participation in top level football and Edusport in Zambia</h3>
+  <p>　　 著者:Mwaanga, O. (2003).<br />
+    　　 Norwegian University of Sport and Physical Education, Oslo</p>
+  <br />
+  <h3>12、The Contribution of Sport to HIV/AIDS Awareness</h3>
+  <p>　　 著者:Okada, C. (2014)<br />
+    　　 C. (eds.) Social Development and Peace</p>
+  <br />
+  <h3>13、Active HIV Awareness: A study into the meanings of sports as a medium of HIV awareness in <br />
+       　　 a South African township</h3>
+  <p>　　 著者:Waardenburg, M. (2006).<br />
+    　　 Utrecht University, Utrecht School of Governance, Organization, Culture &amp; Management<br />
+    　　 <a href="https://www.sportanddev.org/sites/default/files/downloads/61__active_hiv_awareness_a_study_into_the_meanings_of_sports_ 　　 as_a_medium_of_hiv_aware.pdf">https://www.sportanddev.org/sites/default/files/downloads/61__active_hiv_awareness_a_study_into_the_meanings_of_sports_<br />
+    　　 as_a_medium_of_hiv_aware.pdf</a></p>
+  <br />
+  <h3>14、Using soccer to build confidence and increase HCT uptake among adolescent girls </h3>
+  <p>　　 著者:Hershow, R. B., Gannet, K., Merrill, J., Kaufman, E. B., Barkley, C., DeCelles, J. &amp;Harrison, A. (2015).<br />
+    　　 Sport in Society: Cultures, Commerce, Media, Politics</p>
+  <br />
+  <h3>15、身体活動を通じた教育開発-ジンバブエ共和国 AIDS/HIV 教育の検証-</h3>
+  <p>　　 著者:岡田千あき（2000）<br />
+    　　 広島大学大学院国際協力研究科修士論文、広島大学</p>
+  <br />
+  <h3>16、スポーツを用いた HIV/AIDS 啓発 : ジンパブエの事例からみる特徴</h3>
+  <p>　　 著者:岡田千あき（2013）<br />
+    　　 大阪大学大学院人間科学研究科紀要</p>
+  <br />
+  <h3>17、HIV/AIDS とスポーツ</h3>
+  <p>　　 著者:岡田千あき（2015）<br />
+    　　 齊藤一彦、岡田千あき、鈴木直文「スポーツと国際協力」</p>
+  <br />
+</div>
+</div>
+<div id="global"><a name="global02" id="global02"></a><img src="common/images/kaihatsu_glo_bar.gif" width="1000" height="118" alt="グローバリゼーション" /></div>
+<!--グローバリゼーション文献-->
+<div id="bookrist10">
+  <div id="rist_right10">
+    <h3>1、 A Question of Motives: Reciprocity, Sport and Development Assistance</h3>
+  <p>　　著者:Beacom, A. (2007).<br />
+    　　European Sport Management Quarterly</p>
+<h3><br />
+  2、 The Ambiguities of Development: Implications for “development through sport”</h3>
+  <p>　　著者:Black, D. R. (2010).<br />
+    　　Sport in Society</p>
+  <br />
+<h3>3、 Sport-for-Development Approaches in the South African Context: A Case Study Analysis</h3>
+  <p>　　著者:Burnnet, C. (2010).<br />
+    　　South African Journal for Research in Sport, Physical Education and Recreation</p>
+  <br />
+<h3>4、 Sport-in-development: Development for and through Sport? Hoy R, Nicholson M (eds) Sport and Social Capital</h3>
+  <p>　　著者:Coalter, F. (2008).<br />
+    　　London: Elsevier<br />
+    <br />
+  </p>
+<h3>5、 The Politics of Sport-for-development: Limited Focus Programmes and Broad Gauge Problems?</h3>
+  <p>　　著者:Coalter, F. (2010).<br />
+    　　International Review for the Sociology of Sport<br />
+    <br />
+  </p>
+<h3>6、 Sport-for-development: What game are we playing?</h3>
+  <p>　　著者: Coalter, F. (2013).<br />
+    　　London: Routledge<br />
+    <br />
+  </p>
+<h3>7、 Playing with Race</h3>
+  <p>　　著者:Darnell, S. (2007).<br />
+    　　Sport in Society</p>
+    <br />
+    <h3>8、 Power, Politics and “Sport for Development and Peace”: Investigating the Utility of Sport for International Development</h3>
+  <p>　　著者:Darnell, S. C. (2010).<br />
+    　　Sociology of Sport Journal</p>
+  <br />
+  <h3>9、 Sport for Decolonization: Exploring a New Paraxis of Sport for Development</h3>
+  <p>　　著者:Darnell, S., Hayhurst, L. (2011).<br />
+    　　Progress in Development Studies</p>
+    <br />
+    <h3>10、Introduction: Mainstreaming Sport into Development Studies</h3>
+  <p>　　 著者:Darnell, S., Black, D. (2011).<br />
+    　　 Third World Quarterly</p>
+  <br />
+  <h3>11、Postcolonialism and Sport-for-development: A Response to Lindsey and Grattan</h3>
+  <p>　　 著者:Darnell, S., Hayhurst, L. (2012) Hegemony.<br />
+    　　 International Journal of Sport Policy and Politics</p>
+  <br />
+  <h3>12、Sport for Development and Peace: A Critical Sociology</h3>
+  <p>　　 著者:Darnell, S. (2012).<br />
+    　　 London: Bloomsbury.</p>
+  <br />
+  <h3>13、Sport for Development and Peace: A Public Sociology Perspective</h3>
+  <p>　　 著者:Donnelly, P., Atkinson, M., Boyle, S., Szto, C. (2011).<br />
+    　　 Third World Quarterly</p>
+  <br />
+  <h3>14、Sport, Peace and Development</h3>
+  <p>　　 著者:Gilbert, K., Bennett, W. (2012).<br />
+    　　 Campaign: Common Ground</p>
+  <br />
+  <h3>15、The Diffusion of Development-through-Sport: Analyzing the History and Practice of<br /> 
+       　　 the Olympic Movement's Grassroots Outreach to Africa</h3>
+  <p>　　 著者:Guest, A. M. (2009).<br />
+    　　 Sport in Society</p>
+  <br />
+  <h3>16、Human Rights, Globalization and Sentimental Education: The Case of Sport</h3>
+  <p>　　 著者:Giulianotti, R. (2004).<br />
+    　　 Sport in Society</p>
+  <br />
+  <h3>17、The Sport, Development and Peace Sector: A Model of Four Social Policy Domains</h3>
+  <p>　　 著者:Giulianotti, R. (2011).<br />
+    　　 Journal of Social Policy</p>
+  <br />
+  <h3>18、The Power to Shape Policy: Charting Sport for Development and Peace Policy Discourses</h3>
+  <p>　　 著者:Hayhurst, L. (2009).<br />
+    　　 International Journal of Sport Policy and Politics</p>
+  <br />
+  <h3>19、A New Social Movement: Sport for Development and Peace</h3>
+  <p>　　 著者:Kidd, B. (2008).<br />
+    　　 Sport in Society</p>
+  <br />
+  <h3>20、Sport for Development and the Olympic Movement</h3>
+  <p>　　 著者:Kidd, B. (2012).<br />
+    　　 Toronto: University of Toronto</p>
+  <br />
+  <h3>21、Sport: A New Engine of Development</h3>
+  <p>　　 著者:Levermore, R. (2008).<br />
+    　　 Progress in Development Studies</p>
+  <br />
+  <h3>22、Sport and International Development</h3>
+  <p>　　 著者:Levermore, R., Beacom, A. (2009).<br />
+    　　 Basingstoke, Hampshir: Palgrave Macmillan</p>
+  <br />
+  <h3>23、Indigenous Discourses in Sport for Development and Peace</h3>
+  <p>　　 著者:Mwaanga, O., Mwansa, K. (2014).<br />
+    　　 A Case Study of the Ubuntu Cultural Philosophy in EduSport Foundation Zambia</p>
+  <br />
+  <h3>24、Perpetuating the “Lack of Evidence” Discourse in Sport for Development: Privileged Voices<br /> 
+       　　 Unheard Stories and Subjugated Knowledge</h3>
+  <p>　　 著者:Nicholls, S., Giles, A. R., Sethna, C. (2011).<br />
+    　　 International Review for the Sociology of Sport</p>
+  <br />
+  <h3>25、An Own Goal in Sport for Development -Time to Change the Playing Field</h3>
+  <p>　　 著者:Sanders B. (2016).<br />
+    　　 Journal of Sport for Development</p>
+  <br />
+  <h3>26、Sport and Social Mobility: Crossing Boundaries: Routledge Research in Sport</h3>
+  <p>　　 著者:Spaaij, R. (2011).<br />
+    　　 Culture and Society</p>
+  <br />
+  <h3>27、Teaching and Playing Sport for Conflict Resolution and Co-existence in Israel</h3>
+  <p>　　 著者:Sugden, J. (2006).<br />
+    　　 International Review for the Sociology of Sport</p>
+  <br />
+  <h3>28、Sport for Development, Peace, and Social Justice</h3>
+  <p>　　 著者:Schinke R. D., Hanrahan S. J. (2012).<br />
+    　　 Morgantown: West Virginia University</p>
+  <br />
+  <h3>29、Sport and Peace: A Sociological Perspective: Theme in Canadian Sociology Series</h3>
+  <p>　　 著者:Wilson, B. (2012).<br />
+    　　 Toronto: Oxford University Press</p>
+  <br />
+  <h3>30、Middle-Walkers: Negotiating Middle Ground on the Shifting Terrain of Sport, Peace and Development</h3>
+  <p>　　 著者:Wilson, B. (2014).<br />
+    　　 Sport, Social Development and Peace, Emerald</p>
+  <br />
+  <h3>31、Sport, Social Development and Peace</h3>
+  <p>　　 著者:Young, K., Chiaki, O. (2014).<br />
+    　　 UK: Emerald</p>
+  <br />
+  <h3>32、What exactly does sport do? Thinking both critically and positively about development through sport</h3>
+  <p>　　 著者:Guest, A. M., (2005).<br />
+    　　 University of Portland  <br />
+    　　 <a href="www.sad.ch">www.sad.ch</a></p>
+  <br />
+  <h3>33、Literature review of sport for development and Peace</h3>
+  <p> 　　 著者:Kidd, B. and Donnelly, P. (2007).<br />
+    　　 Toronto: Sport for Development and Peace International Working Group (SDPIWG)</p>
+  <br />
+  <h3>34、A new social movement: Sport for development and peace</h3>
+  <p>　　 著者:Kidd, B. (2008).<br />
+    　　 Sport in Society</p>
+  <br />
+  <h3>35、「貧困下におけるスポーツと生活実践-マニラ首都圏のボクシングジムとスクウォッター世界から―」</h3>
+  <p>　　 著者:石岡丈昇（2007）<br />
+    　　 スポーツ社会学研究第15巻</p>
+  <br />
+  <h3>36、「スポーツを通じた開発-国際協力におけるスポーツの定位と諸機関の取り組み-」</h3>
+  <p>　　 著者:岡田千あき・山口泰雄（2009）<br />
+    　　 神戸大学大学院人間発達科学研究科『神戸大学大学院人間発達学研究科研究紀要』</p>
+  <br />
+  <h3>37、途上国開発においてスポーツが果たす役割-カンボジア王国の事例から考えるスポーツを通じた開発</h3>
+  <p>　　 著者:岡田千あき（2011）<br />
+    　　 神戸大学大学院人間発達環境学研究科博士学位論文、神戸大学</p>
+  <br />
+  <h3>38、国際社会における「開発と平和のためのスポーツ」20 年</h3>
+  <p>　　 著者:岡田千あき（2015）<br />
+    　　 大阪大学大学院人間科学研究科紀要</p>
+  <br />
+  <h3>39、途上国に押し寄せるスポーツのグローバリゼーションの実相-メラネシアの事例から―</h3>
+  <p>　　 著者:小林勉（2001）<br />
+    　　 スポーツ社会学研究第9巻</p>
+  <br />
+  <h3>40、国際開発とスポーツ援助-スポーツ援助の動向と課題-</h3>
+  <p>　　 著者:小林勉（2014）<br />
+    　　 スポーツ社会学会編『スポーツ社会学研究』</p>
+  <br />
+  <h3>41、スポーツと国際協力</h3>
+  <p>　　 著者:齊藤一彦・岡田千あき・鈴木直文（2015）<br />
+    　　 大修館書店</p>
+  <br />
+  <h3>42、ガーナにおけるサッカーのローカル化―生活保障としての『約束金システム』をめぐって-</h3>
+  <p>　　 著者:坂本幹（2006）<br />
+    　　 スポーツ社会学研究第14巻</p>
+  <br />
+  <h3>43、現代スポーツ評論 31 特集 -スポーツを通した国際貢献のいま-</h3>
+  <p>　　 著者:清水諭編（2014）<br />
+    　　 創文企画: 東京</p></div>
+</div>
+<div id="footer"><h3>Copyright © 2017 Sport for Development and Peace. All Rights Reserved.</h3></div>
+</body>
+</html>
